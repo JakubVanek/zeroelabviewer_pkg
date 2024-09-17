@@ -62,6 +62,9 @@ desktopicon_png256.path  = $$INSTALL_ROOT/usr/share/icons/hicolor/256x256/apps
 udevrule.files = extras/udev/71-zero-elabviewer.rules
 udevrule.path  = $$INSTALL_ROOT/lib/udev/rules.d
 
-INSTALLS += binfile datafiles desktopentry udevrule
+appstream.files = extras/appstream/io.github.adamberlinger.zero_elab_viewer.metainfo.xml
+appstream.path  = $$INSTALL_ROOT/usr/share/metainfo
+
+INSTALLS += binfile datafiles desktopentry udevrule appstream
 INSTALLS += desktopicon_svg desktopicon_png16 desktopicon_png24 desktopicon_png32
 INSTALLS += desktopicon_png48 desktopicon_png64 desktopicon_png128 desktopicon_png256

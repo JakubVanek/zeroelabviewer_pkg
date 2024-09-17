@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>io.github.adamberlinger.zero_elab_viewer</id>
+
+  <name>Zero eLab Viewer</name>
+  <summary>Viewer application for data acquisition kits</summary>
+  <developer_name>Adam Berlinger</developer_name>
+
+  <project_license>GPL-3.0-or-later</project_license>
+  <metadata_license>CC0-1.0</metadata_license>
+  <content_rating type="oars-1.1"/>
+
+  <launchable type="desktop-id">zero_elabviewer.desktop</launchable>
+
+  <url type="homepage">https://github.com/adamberlinger/zero_elabviewer</url>
+  <url type="bugtracker">https://github.com/adamberlinger/zero_elabviewer/issues</url>
+
+  <provides>
+    <binary>zero_elabviewer</binary>
+  </provides>
+
+  <supports>
+    <!-- 0483:5740 is a generic VCP device ID and so <provides> is too strong -->
+    <modalias>usb:v0483p5740d*</modalias>
+  </supports>
+
+  <description>
+    <p>Zero eLab Viewer is a PC program for displaying and controlling external data acquisition kits through standard communication interface such as USB CDC class.</p>
+    <p>Depending on the specific hardware, it supports features such as:</p>
+    <ul>
+      <li>Oscilloscope</li>
+      <li>Voltmeter</li>
+      <li>Logic analyzer (experimental)</li>
+      <li>PWM measurement</li>
+      <li>PWM output</li>
+      <li>Generator based on DDS (direct digital synthesis)</li>
+    </ul>
+    <p>Zero eLab Viewer can communicate with lab kits such as F0-Lab and G0-Lab, which are built around tiny STM32 microcontrollers. These kits can be built by students and used in introductory EE lessons.</p>
+  </description>
+
+  <screenshots>
+    <screenshot type="default">
+      <caption>Oscilloscope view</caption>
+      <image>https://raw.githubusercontent.com/adamberlinger/zero_elabviewer/caee98bc3877af4c1186ae6e608bf41d6b75eafd/resources/help/img/osc_app.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>Home dialog</caption>
+      <image>https://raw.githubusercontent.com/adamberlinger/zero_elabviewer/caee98bc3877af4c1186ae6e608bf41d6b75eafd/resources/help/img/app_intro.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>Signal generator</caption>
+      <image>https://raw.githubusercontent.com/adamberlinger/zero_elabviewer/caee98bc3877af4c1186ae6e608bf41d6b75eafd/resources/help/img/generator_app.png</image>
+    </screenshot>
+  </screenshots>
+
+  <releases>
+    <release version="0.7" date="2024-02-19">
+      <description>
+        <ul>
+          <li>Display device voltage on main screen when connected</li>
+          <li>Added oscilloscope waveform averaging</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.6" date="2023-03-06">
+      <description>
+        <ul>
+          <li>Store data now saves all the channels</li>
+          <li>Addded real frequency feedback for generator</li>
+          <li>Fixed bug in Oscilloscope that caused crash</li>
+          <li>Dynamic recording range for voltmeter</li>
+        </ul>
+      </description>
+    </release>
+    <release version="0.5" date="2018-07-25">
+      <description>
+        <p>Initial Github release</p>
+      </description>
+    </release>
+  </releases>
+
+  <update_contact>linuxtardis_AT_gmail.com</update_contact>
+</component>
