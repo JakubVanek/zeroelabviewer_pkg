@@ -1,0 +1,5 @@
+zero-elabviewer (0.7-1~vanek0) unstable; urgency=low
+
+  * Initial packaging for Debian-based distros.
+
+ -- Jakub Vaněk <linuxtardis@gmail.com>  Tue, 17 Sep 2024 14:39:23 +0200

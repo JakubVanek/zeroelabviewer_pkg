@@ -1,0 +1,5 @@
+# we do not want <provide> for a generic STM32 USB VID:PID
+zero-elabviewer: appstream-metadata-missing-modalias-provide
+
+# this is intentional, the package will only be in external repos
+zero-elabviewer: initial-upload-closes-no-bugs

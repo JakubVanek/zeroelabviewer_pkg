@@ -1,0 +1,52 @@
+= zero_elabviewer(1)
+:man source:   zero-elabviewer
+:man version:  0.7-1
+:man manual:   Zero eLab Viewer Manual
+
+== NAME
+
+zero_elabviewer - viewer application for data acquisition kits
+
+== SYNOPSIS
+
+*zero_elabviewer*
+
+== DESCRIPTION
+
+*zero_elabviewer* is a PC program for displaying and controlling external data
+acquisition kits through standard communication interface such as USB CDC class.
+Depending on the specific hardware, it supports features such as:
+
+* Oscilloscope
+* Voltmeter
+* Logic analyzer (experimental)
+* PWM measurement
+* PWM output
+* Generator based on DDS (direct digital synthesis)
+
+Zero eLab Viewer can communicate with lab kits such as F0-Lab
+and G0-Lab, which are built around tiny STM32 microcontrollers. These
+kits can be built by students and used in introductory EE lessons.
+
+== BUGS
+
+=== Reporting bugs
+
+Please report bugs to <https://github.com/adamberlinger/zero_elabviewer/issues>.
+
+== COPYRIGHT
+
+Copyright © 2016-2024 Adam Berlinger <berlingeradam@gmail.com>.
+
+This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+On Debian systems, the complete text of this license can be found in /usr/share/common-licenses/GPL-3.
+
+== SEE ALSO
+
+The STM32 kits need to run the correct firmware to operate. This firmware can
+be downloaded from <https://github.com/adamberlinger/zero_elab>.
+
+Information about the data acquisition kits and other useful programs can
+be found on the Embedded server of the Department of Measurement, FEE CTU
+at <http://embedded.fel.cvut.cz/sdi>.
