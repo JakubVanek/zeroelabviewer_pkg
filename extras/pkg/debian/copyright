@@ -60,11 +60,3 @@ License:   GPL-3.0+
  .
  On Debian systems, the complete text of the GNU General Public License
  Version 3 can be found in `/usr/share/common-licenses/GPL-3'.
-
-
-Files:
- resources/img/LOGO_CTU_AJ_bold.png
- resources/img/ctu_logo_small_en.png
- resources/img/ctu_logo_tiny_en.png
-Copyright: __NO_COPYRIGHT_NOR_LICENSE__
-License:   __NO_COPYRIGHT_NOR_LICENSE__
