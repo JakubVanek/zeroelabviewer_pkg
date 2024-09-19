@@ -1,4 +1,4 @@
-zero-elabviewer (0.7-1~vanek0) unstable; urgency=low
+zero-elabviewer (0.7-1~vanek0) jammy; urgency=low
 
   * Initial packaging for Debian-based distros.
 
